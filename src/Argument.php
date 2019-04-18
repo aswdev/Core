@@ -51,6 +51,8 @@ class Argument
     public static function i()
     {
         $class = __CLASS__;
+        $message = !isset($message) ? null : $message;
+        $code = !isset($code) ? null : $code;   
         return new $class($message, $code);
     }
     
